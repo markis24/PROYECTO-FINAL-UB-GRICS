@@ -53,36 +53,4 @@
             </div>
         </div>
     </div>
-
-    <script>
-        (function() {
-            'use strict';
-            // Debemos crear la clase formEliminar dentro del form del botón borrar
-            // Recordar que cada registro a eliminar está contenido en un form
-            let forms = document.querySelectorAll('.formEliminar');
-            Array.prototype.slice.call(forms).forEach(function(form) {
-                form.addEventListener('submit', function(event) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                    Swal.fire({
-                        title: "¿Confirmar la eliminación de este registro?",
-                        icon: "info",
-                        showCancelButton: true,
-                        confirmButtonColor: "#3085d6",
-                        cancelButtonColor: "#d33",
-                        confirmButtonText: "Confirmar"
-                    }).then((result) => {
-                        if (result.isConfirmed) {
-                            this.submit();
-                            Swal.fire({
-                                title: "Eliminado!",
-                                text: "El registro se ha eliminado.",
-                                icon: "success"
-                            });
-                        }
-                    });
-                }, false);
-            });
-        })();
-    </script>
 </x-app-layout>

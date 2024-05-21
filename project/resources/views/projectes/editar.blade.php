@@ -16,8 +16,8 @@
 
                         <div class="grid grid-cols-1 mb-8">
                             <label class="uppercase md:text-sm text-xs text-gray-500 text-light font-semibold"
-                                   for="text_projecte">TITULO:</label>
-                            <textarea id="title_projecte" name="text_projecte"
+                                   for="title_projecte">TITULO:</label>
+                            <textarea id="title_projecte" name="title_projecte"
                                       class="py-4 px-3 rounded-lg border-2 border-purple-300 mt-1 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent resize-none"
                                       required>{{ $projecte->title_projecte }}</textarea>
                         </div>

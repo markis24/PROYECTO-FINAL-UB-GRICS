@@ -1,0 +1,22 @@
+.info-projecte-container h1,
+.info-projecte-container h2,
+.info-projecte-container p {
+    text-align: center;
+}
+
+.info-projecte-title {
+    font-size: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.info-projecte-subtitle {
+    font-size: 50px;
+    margin: 50px 0 25px;
+}
+
+.info-projecte-text {
+    margin: 0 15%;
+    line-height: 1.6;
+    font-size: 16px;
+}

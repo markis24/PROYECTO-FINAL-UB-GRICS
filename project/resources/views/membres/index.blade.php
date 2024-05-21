@@ -62,7 +62,7 @@
             </div>
             <div class="py-8">
                 <a href="{{ route('membres.create') }}"
-                   class="bg-cyan-500 px-5 py-3 rounded-lg text-gray-200 font-semibold hover:bg-cyan-700 transition duration-200 ease-in-out mt-4 mb-4">
+                   class="bg-cyan-700 px-5 py-3 rounded-lg text-gray-200 font-semibold  transition duration-200 ease-in-out mt-4 mb-4">
                     Crear
                 </a>
             </div>
