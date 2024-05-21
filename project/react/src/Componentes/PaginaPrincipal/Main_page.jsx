@@ -1,29 +1,33 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import './Main_page.css';
-import logo from './img_main_page/image.png';
+import cerebro from './img_main_page/image.png';
 
-function Main_page() {
-    return (
+function MainPage() {
+    return ( 
         <div id="mainPageId">
-            <h1>Qui Som</h1>  {/* Título centrado en la parte superior */}
-            <div className='content'>
-                <div className="text">
-                    <p>GRICS és un grup de recerca de la Universitat de Barcelona
-                        que utilitza la psicologia social crítica per fomentar el
-                        coneixement que és políticament problematitzador i socialment
-                        transformador. S'enfoca a utilitzar els estudis psicosocials per
-                        polititzar experiències i fomentar processos alliberadors en
-                        contextos d'opressió i desigualtat. GRICS es posiciona com un actor
-                        públic compromès amb la justícia, la igualtat i la dignitat, promovent
-                        un coneixement transdisciplinar que desafia les normatives epistèmiques i
-                        metodologies ortodoxes. A més a més, està conscient de les contradiccions
-                        del capitalisme acadèmic i prioritza el canvi social sobre la productivitat
-                        acadèmica, oferint també formació investigadora a diferents nivells acadèmics.</p>
-                </div>
-                <img src={logo} alt="Logo" />
+            <img src={cerebro} alt="Logo principal" className="img-animation" width={480} />
+            <h1 id="h1f" className="text-animation">Benvolguts a</h1>
+            <h1 id="h1s" className="text-animation">UB GRICS</h1>
+            <div id="container-page">
+                <p className="animation-body">
+                    Som GRICS, grup de recerca de la Universitat de Barcelona. 
+                    Polititzem l’experiència i impulsem processos alliberadors, 
+                    integrant psicologia social crítica, recerca transdisciplinar i
+                    acció comunitària per la justícia i la igualtat.
+                </p>
+                <Link
+                    to="quiSomContainer"
+                    smooth={true}
+                    duration={1000}
+                    offset={-80}
+                    className="scroll-btn" 
+                >
+                    <button id='buttonAmarillo'><b>Més Sobre Nosaltres</b></button>
+                </Link>
             </div>
         </div>
     );
 }
 
-export default Main_page;
+export default MainPage;

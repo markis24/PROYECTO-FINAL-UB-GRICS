@@ -1,0 +1,84 @@
+.quiSomContainer {
+  text-align: center;
+  padding: 20px;
+  margin: 5% 5%;
+}
+
+.title {
+  color: #d12d6a;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.logoContainer {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  max-width: 800px;
+  float: left;
+}
+
+.text {
+  max-width: 100%;
+  text-align: left;
+}
+
+.text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #5755e0;
+}
+
+.text p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 5rem;
+  }
+
+  .content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .logoContainer {
+    margin-right: 7%;
+    margin-bottom: 0;
+  }
+
+  .text {
+    max-width: 700px;
+    margin-right: 5%;
+  }
+
+  .text h2 {
+    font-size: 2.6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 7rem;
+  }
+
+  .text p {
+    font-size: 18px;
+  }
+}
