@@ -81,3 +81,11 @@ Una vez completados estos pasos, el backend estará listo para ser utilizado.
    docker exec myapp-ub-grics php artisan make:controller MembresController --resource
    ```
 
+## Comandos Principales para crear migraciones, modelos y controladores
+
+1. **Crear controlador para la api rest:**
+
+   ```
+   docker exec myapp-ub-grics php artisan make:controller MembresApiController --resource
+   ```
+
