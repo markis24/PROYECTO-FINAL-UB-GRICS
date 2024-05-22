@@ -1,17 +1,22 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import App from './Componentes/Apps/App'; // Este import está dentro de src
-import InfoProjecte from '../InfoProyecto/InfoProjecte'; // Importa desde un directorio fuera de src
-import Titol_article from '../Articulo/Titol_article'; // Importa desde un directorio fuera de src
+import App from './Componentes/Apps/App';
+import InfoProjecte from '../InfoProyecto/InfoProjecte';
+import Titol_article from '../Articulo/Titol_article';
+import ArticleDetails from '../Articulo/ArticleDetails';
+import ArticleList from '../Articulo/ArticleList.jsx';
 
-ReactDOM.render(
- <Router>
+const container = document.getElementById('root');
+const root = createRoot(container);
+
+root.render(
+  <Router>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="/Infoprojecte" element={<InfoProjecte />} />
-      <Route path="/Titol_article" element={<Titol_article />} />
+      <Route path="/article-list" element={<ArticleList />} />
+    <Route path="/infoprojecte/:id" element={<InfoProjecte />} />
+      <Route path="/article/:id" element={<Titol_article />} />
     </Routes>
-  </Router>,
-  document.getElementById('root')
+  </Router>
 );
